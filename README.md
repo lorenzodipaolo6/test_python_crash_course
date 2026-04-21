@@ -1,3 +1,5 @@
+The repository for the final exam of the Python crash course held by PhD Professor Del Coco Marco.
+
 # Traccia 
 ## Esercitazione Finale
 Realizzare un programma in Python per gestire una classe Studente. 
