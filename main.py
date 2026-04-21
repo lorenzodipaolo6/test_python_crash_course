@@ -9,16 +9,16 @@ class Studente:
 
     # Creazione del metodo "presentati", che presenta lo studente con il suo nome, cognome e i voti ottenuti.
     def presentati(self):
-        print(
-            f"Ciao! Sono lo studente {self.nome} {self.cognome}\nIl mio libretto è composto dai seguenti voti: {self.voti}\n"
-        )
+        print(f"{'='*100}")
+        print(f"Ciao! Sono lo studente {self.nome.upper()} {self.cognome.upper()}")
+        print(f"Il mio libretto è composto dai seguenti voti: {self.voti}\n")
 
     # Creazione del metodo "aggiungi_voto", che aggiunge un nuovo voto al libretto dello studente
     # e stampa il nuovo voto e il libretto aggiornato.
     def aggiungi_voto(self, nuovo_voto):
         self.voti.append(nuovo_voto)
         print(
-            f"Ho ottenuto un nuovo voto: {nuovo_voto}\nIl mio libretto studente, aggiornato all'ultimo esame, è composto da: {self.voti}\n"
+            f"Ho ottenuto un nuovo voto: {nuovo_voto}! \nIl mio libretto studente, aggiornato all'ultimo esame, è composto da: {self.voti}\n"
         )
 
     # Creazione del metodo "calcola_media", che calcola la media del vettore voti e ne stampa il risultato,
@@ -32,22 +32,23 @@ class Studente:
     def studia(self, ore):
         self.ore = ore
         if self.ore > 10:
-            print(f"Ho studiato per {self.ore} ore, sono pronto per l'esame.\n")
+            print(f"Ho studiato per {self.ore} ore, sono pronto per l'esame.")
         elif self.ore > 5:
-            print(f"Ho studiato per {self.ore} ore, devo prepararmi meglio.\n")
+            print(f"Ho studiato per {self.ore} ore, devo prepararmi meglio.")
         else:
-            print(f"Ho studiato per {self.ore} ore, non sono pronto per l'esame.\n")
+            print(f"Ho studiato per {self.ore} ore, non sono pronto per l'esame.")
+        print(f"{'='*100}\n")
 
 
 # Creazione di due soggetti Studente ("Lorenzo" e "Piero") e call dei metodi.
 Lorenzo = Studente("Lorenzo", "Di Paolo", 25, 20112651, [28, 28, 27])
 Lorenzo.presentati()
 Lorenzo.aggiungi_voto(20)
-Lorenzo.calcola_media(Lorenzo.voti)
+Lorenzo.calcola_media()
 Lorenzo.studia(3)
 
 Piero = Studente("Piero", "Rossi", 22, 20112652, [30, 29, 25, 27])
 Piero.presentati()
 Piero.aggiungi_voto(28)
-Piero.calcola_media(Piero.voti)
+Piero.calcola_media()
 Piero.studia(12)
