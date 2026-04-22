@@ -1,4 +1,4 @@
-The repository for the final exam of the Python crash course held by PhD Professor Del Coco Marco.
+The repository for the final exam of the Python crash course held by the University Teacher Del Coco Marco.
 
 # Traccia 
 ## Esercitazione Finale
